@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meilleurs Vœux 2025</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>✨ Bonne Année 2025 ! ✨</h1>
+    <p>Que cette année vous apporte succès, bonheur et santé. 🚀</p>
+    <button onclick="startMagic()">Déclenchez la Magie 🎶</button>
+
+    <audio id="backgroundMusic" loop>
+        <source src="/Audio/GoodNess-Gospel.mp3" type="audio/mpeg">
+        Votre navigateur ne prend pas en charge l'audio.
+    </audio>
+
+    <!-- Modale -->
+    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4"
+                style="border-radius: 12px; overflow: hidden; background: linear-gradient(to right, #1e3c72, #2a5298); color: white;">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="Profil"></div>
+                    <h2 style="margin-bottom: 20px; font-size: 1.8rem; color: white;">Josias Amoussou</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px; color: white;">Développeur web et graphiste</p>
+                    <p style="font-size: 1rem; font-style: italic; color: white;">
+                        "Passionné par le numérique, je m'engage à créer des expériences visuelles uniques et des
+                        solutions digitales adaptées à vos besoins."
+                    </p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="https://www.facebook.com/josias.amoussou.714" target="_blank"
+                        style="color: white; text-decoration: none; font-size: 1.5rem; margin-right: 10px;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@jo_dev_code?is_from_webapp=1&sender_device=pc" target="_blank"
+                        style="color: white; text-decoration: none; font-size: 1.5rem; margin-right: 10px;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/22994973989" target="_blank"
+                        style="color: white; text-decoration: none; font-size: 1.5rem; margin-right: 10px;">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/josias-amoussou" target="_blank"
+                        style="color: white; text-decoration: none; font-size: 1.5rem; margin-right: 10px;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:amoussoujosias7@gmail.com"
+                        style="color: white; text-decoration: none; font-size: 1.5rem;">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Créé par Josias AMOUSSOU , développeur web et graphiste.
+        <a href="#" data-bs-toggle="modal" data-bs-target="#cardModal">En savoir plus sur moi</a>.
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

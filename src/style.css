@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0 40px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #2a5298;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: fadeIn 4s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bubble,
+.voeux-bubble {
+    position: absolute;
+    bottom: -50px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: rise 5s linear infinite;
+}
+
+.voeux-bubble {
+    width: 250px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le modal */
+.modal-content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #555;
+}
+.Profil{
+    background-image: url(/images/AMOUSSOU.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+    border: 3px solid white;
+    margin: auto;
+}
